@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run Snyk to check configuration files for security issues
         continue-on-error: true
-        uses: snyk/actions/iac@master
+        uses: snyk/actions/iac@0.3.0
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
